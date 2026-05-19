@@ -50,15 +50,14 @@
  .hero-image {
   flex: 1;
   min-width: 300px;
-  max-width: 200px;
   position: relative;
-  margin: auto;
 }
-    
+
 .hero-photo {
   width: 100%;
-  height: auto;
   border-radius: 30px;
+  object-fit: cover;
+  height: 550px;
   display: block;
 }
     
@@ -113,15 +112,15 @@
     
     }
 
- .info-card {
+.info-card {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background: rgba(17,17,17,0.95);
+  bottom: -25px;
+  left: -20px;
+  background: #111;
   border: 1px solid rgba(211,141,189,0.4);
   padding: 25px;
   border-radius: 24px;
-  max-width: 300px;
+  max-width: 320px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.4);
 }
 
@@ -239,7 +238,7 @@
       </div>
 
       <div class="hero-image">
-        <img src="heroimage.jpg">
+        <img src="heroimage.jpg" class="hero-photo">
 
         <div class="info-card">
           <h3 style="color:#d38dbd; margin-bottom:10px;">We Speak Fluent Mechanic.</h3>
