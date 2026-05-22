@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>Auto Angels | Vehicle Concierge Service</title>
 
@@ -17,10 +17,6 @@
       margin:0;
       padding:0;
       box-sizing:border-box;
-    }
-
-    html{
-      scroll-behavior:smooth;
     }
 
     body{
@@ -80,7 +76,7 @@
 
     .hero-subhead{
       display:block;
-      font-size:42px;
+      font-size:38px;
       line-height:1.15;
       margin-top:14px;
       color:#d38dbd;
@@ -111,10 +107,6 @@
     .btn-primary{
       background:#d38dbd;
       color:#000;
-    }
-
-    .btn-primary:hover{
-      opacity:0.9;
     }
 
     .btn-secondary{
@@ -201,30 +193,7 @@
       color:#d7d7d7;
     }
 
-    /* NOTE */
-
-    .note-box{
-      background:#111;
-      border:1px solid rgba(211,141,189,0.3);
-      border-radius:28px;
-      padding:40px;
-      text-align:center;
-      max-width:900px;
-      margin:auto;
-    }
-
-    .note-box h2{
-      margin-bottom:20px;
-      font-size:36px;
-    }
-
-    .note-box p{
-      color:#d0d0d0;
-      font-size:18px;
-      margin-bottom:18px;
-    }
-
-    /* RATES */
+    /* FEES */
 
     .rates-grid{
       display:grid;
@@ -256,6 +225,67 @@
 
     .rates-card p{
       color:#d7d7d7;
+    }
+
+    /* FAQ */
+
+    .faq-container{
+      max-width:900px;
+      margin:auto;
+    }
+
+    .faq-item{
+      background:#111;
+      border:1px solid #222;
+      border-radius:20px;
+      margin-bottom:18px;
+      overflow:hidden;
+    }
+
+    .faq-question{
+      width:100%;
+      background:none;
+      border:none;
+      color:#fff;
+      text-align:left;
+      padding:24px;
+      font-size:20px;
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    .faq-answer{
+      display:none;
+      padding:0 24px 24px 24px;
+      color:#d0d0d0;
+      font-size:16px;
+    }
+
+    .faq-item.active .faq-answer{
+      display:block;
+    }
+
+    /* NOTE */
+
+    .note-box{
+      background:#111;
+      border:1px solid rgba(211,141,189,0.3);
+      border-radius:28px;
+      padding:40px;
+      text-align:center;
+      max-width:900px;
+      margin:auto;
+    }
+
+    .note-box h2{
+      margin-bottom:20px;
+      font-size:36px;
+    }
+
+    .note-box p{
+      color:#d0d0d0;
+      font-size:18px;
+      margin-bottom:18px;
     }
 
     /* CTA */
@@ -296,7 +326,7 @@
       }
 
       .hero-subhead{
-        font-size:32px;
+        font-size:30px;
       }
 
       .hero-logo{
@@ -328,7 +358,7 @@
       }
 
       .hero-subhead{
-        font-size:28px;
+        font-size:26px;
       }
 
       .hero p{
@@ -388,11 +418,15 @@
           </p>
 
           <div class="button-group">
-            <a href="https://wa.me/94777495554" class="btn btn-primary">Book via WhatsApp</a>
+
+            <a href="https://wa.me/94777495554" class="btn btn-primary">
+              Book via WhatsApp
+            </a>
 
             <a href="tel:0777495554" class="btn btn-secondary">
               Call 077 749 5554
             </a>
+
           </div>
 
         </div>
@@ -453,50 +487,32 @@
 
         <div class="service-card">
           <h3>Family-Owned Business</h3>
-
-          <p>
-            Built on trust, professionalism and long-term customer relationships.
-          </p>
+          <p>Built on trust, professionalism and long-term customer relationships.</p>
         </div>
 
         <div class="service-card">
           <h3>30+ Years Automotive Experience</h3>
-
-          <p>
-            Extensive hands-on experience handling automotive repairs, servicing and vehicle-related matters in Sri Lanka.
-          </p>
+          <p>Extensive hands-on experience handling automotive repairs and vehicle-related matters in Sri Lanka.</p>
         </div>
 
         <div class="service-card">
           <h3>Transparent Communication</h3>
-
-          <p>
-            Clear explanations, honest updates and no confusing technical jargon.
-          </p>
+          <p>Clear explanations, honest updates and no confusing technical jargon.</p>
         </div>
 
         <div class="service-card">
           <h3>Female-Friendly Service Experience</h3>
-
-          <p>
-            Designed specifically to make vehicle maintenance easier, safer and less stressful for busy professional women.
-          </p>
+          <p>Designed specifically to make vehicle maintenance easier and less stressful.</p>
         </div>
 
         <div class="service-card">
           <h3>Trusted Partner Workshops</h3>
-
-          <p>
-            Access to carefully selected workshops based on reliability, workmanship and professionalism.
-          </p>
+          <p>Access to carefully selected workshops based on reliability and professionalism.</p>
         </div>
 
         <div class="service-card">
           <h3>Real-Time Updates</h3>
-
-          <p>
-            Customers are kept informed throughout the repair process via WhatsApp messaging, photos, videos and calls where necessary.
-          </p>
+          <p>Customers are kept informed throughout the repair process via WhatsApp and calls.</p>
         </div>
 
       </div>
@@ -524,53 +540,28 @@
       <div class="services-grid">
 
         <div class="service-card">
-
           <h3>1. Vehicle Handover</h3>
-
-          <p>
-            Your vehicle is handed over to Auto Angels at your home, office or another convenient location.
-          </p>
-
+          <p>Your vehicle is handed over at your home, office or another convenient location.</p>
         </div>
 
         <div class="service-card">
-
           <h3>2. Initial Inspection</h3>
-
-          <p>
-            A quick vehicle inspection is carried out and repair requirements are discussed with the customer.
-          </p>
-
+          <p>A quick inspection is carried out and repair requirements are discussed.</p>
         </div>
 
         <div class="service-card">
-
           <h3>3. Workshop Coordination</h3>
-
-          <p>
-            Your vehicle is taken either to your preferred workshop or an Auto Angels recommended partner workshop.
-          </p>
-
+          <p>Your vehicle is taken to your preferred workshop or an Auto Angels partner workshop.</p>
         </div>
 
         <div class="service-card">
-
           <h3>4. Repair Updates</h3>
-
-          <p>
-            Customers are updated on repair costs, timelines and workshop recommendations before work proceeds.
-          </p>
-
+          <p>Customers are updated on repair costs and timelines before work proceeds.</p>
         </div>
 
         <div class="service-card">
-
           <h3>5. Vehicle Return</h3>
-
-          <p>
-            Once repairs are completed, the vehicle is returned safely back to the customer.
-          </p>
-
+          <p>Once repairs are completed, the vehicle is returned safely back to the customer.</p>
         </div>
 
       </div>
@@ -675,9 +666,7 @@
     <div class="container">
 
       <div class="section-title">
-
         <h2>Service Fees & Updates</h2>
-
       </div>
 
       <div class="rates-grid">
@@ -690,16 +679,17 @@
             <li>Basic call-up fee starts from LKR 1,000</li>
 
             <li>
-              Workshop charges must be settled directly with the respective workshop via online transfer
+              Workshop charges must be settled directly with the respective workshop
             </li>
 
             <li>
-              Service charges are based on time and travel involved for each customer request
+              Service charges are based on time and travel involved
             </li>
 
             <li>
-              For repairs extending beyond the same day, revisit charges apply at approximately half the initial day’s service rate
+              Revisit charges may apply for repairs extending beyond the same day
             </li>
+
           </ul>
 
         </div>
@@ -709,7 +699,7 @@
           <h3>Real-Time Updates</h3>
 
           <p>
-            Customers are updated throughout the repair process via WhatsApp messaging, photos, videos and video calls where necessary.
+            Customers are updated throughout the repair process via WhatsApp messaging, photos, videos and calls where necessary.
           </p>
 
           <br>
@@ -718,6 +708,70 @@
             Future services will include live vehicle tracking so customers can monitor where their vehicle is at all times.
           </p>
 
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+
+  <section class="trust-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <p>
+          Quick answers to common questions.
+        </p>
+
+      </div>
+
+      <div class="faq-container">
+
+        <div class="faq-item">
+          <button class="faq-question">Does my vehicle need to be insured?</button>
+
+          <div class="faq-answer">
+            Yes. Vehicles handed over to Auto Angels should have a valid comprehensive insurance cover.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Who will drive my vehicle?</button>
+
+          <div class="faq-answer">
+            Vehicles are driven by licensed Auto Angels team members using defensive driving practices and reasonable care.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I choose my own workshop?</button>
+
+          <div class="faq-answer">
+            Yes. Customers may choose their preferred workshop within Colombo and Greater Colombo areas.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How are payments handled?</button>
+
+          <div class="faq-answer">
+            Workshop payments are settled directly by the customer. Auto Angels fees may be paid via online transfer or cash.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">What happens if repairs take multiple days?</button>
+
+          <div class="faq-answer">
+            Revisit charges may apply depending on travel distance. WhatsApp repair updates are provided free of charge.
+          </div>
         </div>
 
       </div>
@@ -741,7 +795,7 @@
         </p>
 
         <p>
-          Customers are requested to ensure that the vehicle is adequately insured, sufficient fuel is available in the tank and personal valuables are removed from the vehicle prior to handover.
+          Customers are requested to ensure sufficient fuel is available and personal valuables are removed from the vehicle prior to handover.
         </p>
 
       </div>
@@ -785,6 +839,26 @@
     </div>
 
   </footer>
+
+  <!-- FAQ SCRIPT -->
+
+  <script>
+
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+
+      const button = item.querySelector('.faq-question');
+
+      button.addEventListener('click', () => {
+
+        item.classList.toggle('active');
+
+      });
+
+    });
+
+  </script>
 
 </body>
 </html>
