@@ -42,7 +42,7 @@
 
     .container{
       width:90%;
-      max-width:1250px;
+      max-width:1400px;
       margin:auto;
     }
 
@@ -50,12 +50,12 @@
       padding:90px 0;
     }
 
-    .pink{
-      color:#d38dbd;
-    }
-
     h1,h2,h3{
       line-height:1.05;
+    }
+
+    .pink{
+      color:#d38dbd;
     }
 
     /* NAVBAR */
@@ -270,8 +270,8 @@
 
     .services-grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:30px;
+      grid-template-columns:repeat(5,1fr);
+      gap:20px;
     }
 
     .service-card{
@@ -323,7 +323,15 @@
       font-size:14px;
     }
 
-    /* MOBILE */
+    /* RESPONSIVE */
+
+    @media(max-width:1100px){
+
+      .services-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+    }
 
     @media(max-width:950px){
 
@@ -345,6 +353,14 @@
 
       .cta h2{
         font-size:42px;
+      }
+
+    }
+
+    @media(max-width:700px){
+
+      .services-grid{
+        grid-template-columns:1fr;
       }
 
     }
@@ -749,7 +765,7 @@
 
     <div class="container">
 
-      © Auto Angels Sri Lanka
+      Auto Angels © 2026. All rights reserved. A proud Sri Lankan venture.
 
     </div>
 
