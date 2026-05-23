@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -26,6 +27,10 @@
       line-height:1.6;
     }
 
+    html{
+      scroll-behavior:smooth;
+    }
+
     img{
       max-width:100%;
       display:block;
@@ -45,12 +50,12 @@
       padding:90px 0;
     }
 
-    .pink{
-      color:#d38dbd;
-    }
-
     h1,h2,h3{
       line-height:1.1;
+    }
+
+    .pink{
+      color:#d38dbd;
     }
 
     /* NAVBAR */
@@ -94,7 +99,7 @@
       border-radius:10px;
     }
 
-    /* MENU */
+    /* MOBILE MENU */
 
     .mobile-menu{
       position:fixed;
@@ -103,32 +108,49 @@
       width:100%;
       height:100vh;
       background:#000;
-      z-index:999;
+      z-index:9999;
       transition:0.4s ease;
       padding:120px 40px;
+      overflow-y:auto;
     }
 
     .mobile-menu.active{
       right:0;
     }
 
-    .mobile-menu a{
-      display:block;
-      color:#fff;
-      font-size:32px;
-      font-weight:800;
-      margin-bottom:30px;
-    }
-
     .close-menu{
       position:absolute;
-      top:30px;
+      top:25px;
       right:30px;
       background:none;
       border:none;
       color:#fff;
       font-size:42px;
       cursor:pointer;
+    }
+
+    .menu-section{
+      margin-bottom:70px;
+    }
+
+    .menu-section h2{
+      font-size:38px;
+      margin-bottom:25px;
+      color:#d38dbd;
+    }
+
+    .menu-section p{
+      color:#d0d0d0;
+      margin-bottom:18px;
+    }
+
+    .menu-section ul{
+      list-style:none;
+    }
+
+    .menu-section li{
+      margin-bottom:14px;
+      color:#d0d0d0;
     }
 
     /* HERO */
@@ -199,7 +221,7 @@
       border-radius:32px;
     }
 
-    /* SECTION TITLES */
+    /* HOW IT WORKS */
 
     .section-title{
       text-align:center;
@@ -215,8 +237,6 @@
       color:#cfcfcf;
       font-size:18px;
     }
-
-    /* CARDS */
 
     .services-grid{
       display:grid;
@@ -239,74 +259,6 @@
 
     .service-card p{
       color:#d7d7d7;
-    }
-
-    .service-card ul{
-      list-style:none;
-    }
-
-    .service-card li{
-      margin-bottom:12px;
-      color:#d7d7d7;
-    }
-
-    /* FAQ */
-
-    .faq-container{
-      max-width:900px;
-      margin:auto;
-    }
-
-    .faq-item{
-      background:#111;
-      border:1px solid #222;
-      border-radius:20px;
-      margin-bottom:18px;
-      overflow:hidden;
-    }
-
-    .faq-question{
-      width:100%;
-      background:none;
-      border:none;
-      color:#fff;
-      text-align:left;
-      padding:24px;
-      font-size:20px;
-      font-weight:700;
-      cursor:pointer;
-    }
-
-    .faq-answer{
-      display:none;
-      padding:0 24px 24px;
-      color:#d0d0d0;
-    }
-
-    .faq-item.active .faq-answer{
-      display:block;
-    }
-
-    /* NOTE */
-
-    .note-box{
-      background:#111;
-      border:1px solid rgba(211,141,189,0.3);
-      border-radius:28px;
-      padding:40px;
-      text-align:center;
-      max-width:900px;
-      margin:auto;
-    }
-
-    .note-box h2{
-      margin-bottom:20px;
-      font-size:36px;
-    }
-
-    .note-box p{
-      color:#d0d0d0;
-      margin-bottom:16px;
     }
 
     /* CTA */
@@ -332,6 +284,25 @@
       text-align:center;
       color:#999;
       font-size:14px;
+    }
+
+    /* FAQ */
+
+    .faq-item{
+      border-bottom:1px solid #222;
+      padding-bottom:15px;
+      margin-bottom:15px;
+    }
+
+    .faq-question{
+      color:#fff;
+      font-weight:700;
+      margin-bottom:10px;
+    }
+
+    .faq-answer{
+      color:#d0d0d0;
+      font-size:15px;
     }
 
     /* MOBILE */
@@ -395,8 +366,8 @@
         font-size:34px;
       }
 
-      .mobile-menu a{
-        font-size:28px;
+      .menu-section h2{
+        font-size:30px;
       }
 
     }
@@ -416,9 +387,11 @@
       <img src="Auto-Angels-Horizonal-White.png" class="nav-logo">
 
       <button class="hamburger" id="menu-open">
+
         <span></span>
         <span></span>
         <span></span>
+
       </button>
 
     </div>
@@ -431,12 +404,168 @@
 
     <button class="close-menu" id="menu-close">×</button>
 
-    <a href="#about">About</a>
-    <a href="#trust">Why Trust Us</a>
-    <a href="#services">Services</a>
-    <a href="#fees">Fees & Updates</a>
-    <a href="#faq">FAQs</a>
-    <a href="#contact">Contact</a>
+    <!-- ABOUT -->
+
+    <div class="menu-section">
+
+      <h2>About Auto Angels</h2>
+
+      <p>
+        Auto Angels is a family-owned vehicle concierge startup built around trust, convenience and peace of mind for busy professional women in Sri Lanka.
+      </p>
+
+      <p>
+        Backed by over 30 years of hands-on automotive experience, we help manage everything from servicing and repairs to inspections and roadside support.
+      </p>
+
+    </div>
+
+    <!-- WHY TRUST -->
+
+    <div class="menu-section">
+
+      <h2>Why Customers Trust Auto Angels</h2>
+
+      <ul>
+        <li>Family-owned business</li>
+        <li>30+ years automotive experience</li>
+        <li>Transparent communication</li>
+        <li>Female-friendly service experience</li>
+        <li>Trusted partner workshops</li>
+        <li>Real-time updates</li>
+      </ul>
+
+    </div>
+
+    <!-- SERVICES -->
+
+    <div class="menu-section">
+
+      <h2>Services</h2>
+
+      <ul>
+        <li>Mechanical repairs</li>
+        <li>Accident repairs</li>
+        <li>Tinkering & painting</li>
+        <li>A/C repairs</li>
+        <li>Wheel alignment & balancing</li>
+        <li>Tyre puncture repairs</li>
+        <li>Audio system upgrades</li>
+        <li>Vehicle detailing</li>
+        <li>Paint Protection Film application</li>
+        <li>Colour wraps</li>
+        <li>Vehicle health reports</li>
+        <li>Insurance inspections</li>
+        <li>Emission test certificates</li>
+        <li>Roadside assistance after 6:00pm</li>
+      </ul>
+
+    </div>
+
+    <!-- FEES -->
+
+    <div class="menu-section">
+
+      <h2>Fees & Updates</h2>
+
+      <ul>
+        <li>Basic call-up fee starts from LKR 1,000</li>
+        <li>Workshop payments are settled directly by the customer</li>
+        <li>Service charges are based on time and travel involved</li>
+        <li>Revisit charges may apply for multi-day repairs</li>
+      </ul>
+
+      <br>
+
+      <p>
+        Customers are updated throughout the repair process via WhatsApp messaging, photos, videos and calls where necessary.
+      </p>
+
+    </div>
+
+    <!-- FAQ -->
+
+    <div class="menu-section">
+
+      <h2>FAQs</h2>
+
+      <div class="faq-item">
+
+        <div class="faq-question">
+          Does my vehicle need to be insured?
+        </div>
+
+        <div class="faq-answer">
+          Yes. Vehicles handed over to Auto Angels should have a valid comprehensive insurance cover.
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <div class="faq-question">
+          Who will drive my vehicle?
+        </div>
+
+        <div class="faq-answer">
+          Customer vehicles are handled by licensed Auto Angels team members who prioritise safety and professionalism.
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <div class="faq-question">
+          Can I choose my own workshop?
+        </div>
+
+        <div class="faq-answer">
+          Yes. Customers may choose their preferred workshop within Colombo and Greater Colombo areas.
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <div class="faq-question">
+          How are payments handled?
+        </div>
+
+        <div class="faq-answer">
+          Workshop payments are settled directly by the customer. Auto Angels fees may be paid via online transfer or cash.
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <div class="faq-question">
+          What happens if repairs take multiple days?
+        </div>
+
+        <div class="faq-answer">
+          Revisit charges may apply depending on travel distance. WhatsApp repair updates are provided free of charge.
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- NOTE -->
+
+    <div class="menu-section">
+
+      <h2>Please Note</h2>
+
+      <p>
+        Auto Angels currently does not undertake spare-part sourcing or purchasing services.
+      </p>
+
+      <p>
+        Customers are requested to ensure sufficient fuel is available and personal valuables are removed prior to vehicle handover.
+      </p>
+
+    </div>
 
   </div>
 
@@ -461,7 +590,7 @@
           </h1>
 
           <p>
-            Auto Angels is a family-owned vehicle concierge startup built around trust, convenience and peace of mind for busy professional women in Sri Lanka.
+            Professional vehicle concierge services for busy women in Colombo.
           </p>
 
           <div class="button-group">
@@ -479,7 +608,9 @@
         </div>
 
         <div class="hero-image">
+
           <img src="heroimage.jpeg" alt="Auto Angels Vehicle Concierge Service">
+
         </div>
 
       </div>
@@ -490,7 +621,7 @@
 
   <!-- HOW IT WORKS -->
 
-  <section id="about">
+  <section>
 
     <div class="container">
 
@@ -507,197 +638,51 @@
       <div class="services-grid">
 
         <div class="service-card">
+
           <h3>1. Vehicle Handover</h3>
-          <p>Your vehicle is handed over at your home, office or another convenient location.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>2. Initial Inspection</h3>
-          <p>A quick inspection is carried out and repair requirements are discussed.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>3. Workshop Coordination</h3>
-          <p>Your vehicle is taken to your preferred workshop or an Auto Angels partner workshop.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>4. Repair Updates</h3>
-          <p>Customers are updated on repair costs and timelines before work proceeds.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>5. Vehicle Return</h3>
-          <p>Once repairs are completed, the vehicle is returned safely back to the customer.</p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- WHY TRUST -->
-
-  <section id="trust">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Why Customers Trust Auto Angels</h2>
-
-        <p>
-          Built around trust, transparency and convenience.
-        </p>
-
-      </div>
-
-      <div class="services-grid">
-
-        <div class="service-card">
-          <h3>Family-Owned Business</h3>
-          <p>Built on trust, professionalism and long-term customer relationships.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>30+ Years Automotive Experience</h3>
-          <p>Extensive hands-on automotive experience in Sri Lanka.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>Transparent Communication</h3>
-          <p>Clear explanations and honest updates without confusing jargon.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>Female-Friendly Service</h3>
-          <p>Designed to make vehicle maintenance easier and less stressful.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>Trusted Partner Workshops</h3>
-          <p>Access to carefully selected workshops based on reliability and professionalism.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>Real-Time Updates</h3>
-          <p>Customers are kept informed throughout the repair process.</p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- SERVICES -->
-
-  <section id="services">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Services We Can Help You With</h2>
-
-      </div>
-
-      <div class="services-grid">
-
-        <div class="service-card">
-
-          <h3>Repairs & Maintenance</h3>
-
-          <ul>
-            <li>Mechanical repairs</li>
-            <li>Accident repairs</li>
-            <li>Tinkering & painting</li>
-            <li>A/C repairs</li>
-            <li>Vehicle diagnostics</li>
-          </ul>
-
-        </div>
-
-        <div class="service-card">
-
-          <h3>Tyres & Wheels</h3>
-
-          <ul>
-            <li>Wheel alignment</li>
-            <li>Wheel balancing</li>
-            <li>Tyre puncture repairs</li>
-            <li>Tyre purchasing assistance</li>
-          </ul>
-
-        </div>
-
-        <div class="service-card">
-
-          <h3>Upgrades & Enhancements</h3>
-
-          <ul>
-            <li>Audio system repairs & upgrades</li>
-            <li>Vehicle modifications & upgrades</li>
-            <li>Vehicle detailing</li>
-            <li>Paint Protection Film application</li>
-            <li>Colour wraps</li>
-          </ul>
-
-        </div>
-
-        <div class="service-card">
-
-          <h3>Reports & Inspections</h3>
-
-          <ul>
-            <li>Vehicle health reports</li>
-            <li>Vehicle valuations</li>
-            <li>Insurance inspections</li>
-            <li>Obtaining emission test certificates</li>
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- FEES -->
-
-  <section id="fees">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Fees & Updates</h2>
-
-      </div>
-
-      <div class="services-grid">
-
-        <div class="service-card">
-
-          <h3>Service Fees</h3>
-
-          <ul>
-            <li>Basic call-up fee starts from LKR 1,000</li>
-            <li>Workshop payments are settled directly by the customer</li>
-            <li>Service charges are based on time and travel involved</li>
-            <li>Revisit charges may apply for multi-day repairs</li>
-          </ul>
-
-        </div>
-
-        <div class="service-card">
-
-          <h3>Real-Time Updates</h3>
 
           <p>
-            Customers are updated throughout the repair process via WhatsApp messaging, photos, videos and calls where necessary.
+            Your vehicle is handed over at your home, office or another convenient location.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <h3>2. Initial Inspection</h3>
+
+          <p>
+            A quick inspection is carried out and repair requirements are discussed.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <h3>3. Workshop Coordination</h3>
+
+          <p>
+            Your vehicle is taken to your preferred workshop or an Auto Angels partner workshop.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <h3>4. Repair Updates</h3>
+
+          <p>
+            Customers are updated on repair costs and timelines before work proceeds.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <h3>5. Vehicle Return</h3>
+
+          <p>
+            Once repairs are completed, the vehicle is returned safely back to the customer.
           </p>
 
         </div>
@@ -708,93 +693,9 @@
 
   </section>
 
-  <!-- FAQ -->
-
-  <section id="faq">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Frequently Asked Questions</h2>
-
-      </div>
-
-      <div class="faq-container">
-
-        <div class="faq-item">
-          <button class="faq-question">Does my vehicle need to be insured?</button>
-
-          <div class="faq-answer">
-            Yes. Vehicles handed over to Auto Angels should have a valid comprehensive insurance cover.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">Who will drive my vehicle?</button>
-
-          <div class="faq-answer">
-            Customer vehicles are handled by licensed Auto Angels team members who prioritise safety and professionalism.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">Can I choose my own workshop?</button>
-
-          <div class="faq-answer">
-            Yes. Customers may choose their preferred workshop within Colombo and Greater Colombo areas.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">How are payments handled?</button>
-
-          <div class="faq-answer">
-            Workshop payments are settled directly by the customer. Auto Angels fees may be paid via online transfer or cash.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">What happens if repairs take multiple days?</button>
-
-          <div class="faq-answer">
-            Revisit charges may apply depending on travel distance. WhatsApp repair updates are provided free of charge.
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- NOTE -->
-
-  <section>
-
-    <div class="container">
-
-      <div class="note-box">
-
-        <h2>Please Note</h2>
-
-        <p>
-          Auto Angels currently does not undertake spare-part sourcing or purchasing services.
-        </p>
-
-        <p>
-          Customers are requested to ensure sufficient fuel is available and personal valuables are removed prior to vehicle handover.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
   <!-- CTA -->
 
-  <section class="cta" id="contact">
+  <section class="cta">
 
     <div class="container">
 
@@ -828,27 +729,9 @@
 
   </footer>
 
-  <!-- SCRIPTS -->
+  <!-- MENU SCRIPT -->
 
   <script>
-
-    // FAQ
-
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
-
-      const button = item.querySelector('.faq-question');
-
-      button.addEventListener('click', () => {
-
-        item.classList.toggle('active');
-
-      });
-
-    });
-
-    // MENU
 
     const menuOpen = document.getElementById('menu-open');
     const menuClose = document.getElementById('menu-close');
